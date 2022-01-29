@@ -9,7 +9,6 @@ module.exports = app => {
 
     app.get('/atendimentos/:id', (req, res) => {
         const id = parseInt(req.params.id)
-        console.log(id)
         Atendimento.buscaPorId(id, res)
     })
 
